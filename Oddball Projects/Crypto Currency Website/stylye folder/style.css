@@ -1,0 +1,1398 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(204, 94%, 7%);
+  --clr-primary-2: hsl(205, 74%, 25%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --ff-primary: 'Oxanium', cursive;
+  --ff-secondary: 'Poppins', sans-serif;
+  --transition1: all 0.1s linear;
+  --transition: all 2s ease-out;
+  --spacing: 0.25rem;
+  --radius: 2.2rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: var(--ff-primary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+i {
+  color: #3671E9;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*  global classes */
+.btn {
+  text-transform: uppercase;
+  background-color: #3671E9;
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  height: 2.5rem;
+  display: inline-block;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 0.875rem;
+  font-family: var(--ff-primary);
+  border: 2px solid var(--clr-white);
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+}
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  height: 5rem;
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+}
+
+header .menu-center {
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: inherit;
+  height: inherit;
+}
+
+header .menu-center .img-container {
+  height: 2.5rem;
+}
+
+header .menu-center .img-container img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .menu-center .items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu-center .items-container .item {
+  margin: .5rem .5rem;
+  padding: .5rem;
+}
+
+header .menu-center .items-container .item:hover {
+  border-bottom: 2px solid #3671E9;
+}
+
+header .menu-center .items-container .item-5 {
+  padding: 0 2.5rem;
+  border-right: 2px solid var(--clr-grey-3);
+}
+
+header .menu-center .items-container .item-5:hover {
+  border-bottom: none;
+}
+
+header .menu-center .items-container .reg-btn {
+  margin-left: 1.5rem;
+}
+
+header .menu-center .toggle-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  display: none;
+}
+
+header .menu-center .toggle-btn .fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-1 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: var(--clr-white);
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+}
+
+.section-1 .general-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3rem;
+}
+
+.section-1 .general-container .left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-1 .general-container .left-container .percent-desc-con {
+  background-color: var(--clr-grey-3);
+  border-radius: var(--radius);
+  width: 85%;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 .5rem;
+  padding-left: .3rem;
+}
+
+.section-1 .general-container .left-container .percent-desc-con .item-1 {
+  background-color: var(--clr-white);
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-grey-3);
+  padding: .2rem 0;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.section-1 .general-container .left-container .percent-desc-con .item-2 {
+  text-transform: lowercase;
+  word-spacing: .2rem;
+  font-size: 1rem;
+}
+
+.section-1 .general-container .left-container .main-desc-con {
+  padding-top: 2.5rem;
+}
+
+.section-1 .general-container .left-container .main-desc-con h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.section-1 .general-container .left-container .main-desc-con button {
+  border: none;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-1 .general-container .left-container .main-desc-con button span {
+  color: var(--clr-white);
+}
+
+.section-1 .general-container .left-container .main-desc-con button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--clr-white);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.section-1 .general-container .left-container .main-desc-con button div i {
+  font-size: .6rem;
+}
+
+.section-1 .general-container .right-container {
+  height: 75vh;
+  width: 100%;
+}
+
+.section-1 .general-container .right-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-2 {
+  padding: 3.5rem 0;
+  width: 100%;
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+}
+
+.section-2 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3rem;
+}
+
+.section-2 .items .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 1fr;
+      grid-template-columns: 70px 1fr;
+  gap: 2rem;
+}
+
+.section-2 .items .item .icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--clr-grey-3);
+}
+
+.section-2 .items .item .icon i {
+  font-size: 1.5rem;
+}
+
+.section-2 .items .item .description {
+  padding-top: 1rem;
+}
+
+.section-2 .items .item .description h3 {
+  color: var(--clr-white);
+  margin: 0;
+}
+
+.section-2 .items .item .description p {
+  color: var(--clr-grey-4);
+  font-size: .8rem;
+}
+
+.section-3 {
+  padding: 3rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  color: var(--clr-white);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+}
+
+.section-3 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-3 .left h2 {
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.section-3 .left h2 span {
+  text-transform: uppercase;
+}
+
+.section-3 .left button {
+  width: 40%;
+  height: 2.5rem;
+  border: none;
+  text-transform: lowercase;
+}
+
+.section-3 .right {
+  height: 60vh;
+}
+
+.section-3 .right img {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-4 {
+  background-color: var(--clr-white);
+  padding: 3rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 70vh;
+  color: var(--clr-white);
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+}
+
+.section-4 .content-wrapper {
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.section-4 .content-wrapper .desc-con h2 {
+  font-size: 2rem;
+  color: var(--clr-white);
+}
+
+.section-4 .content-wrapper .desc-con p {
+  color: var(--clr-grey-4);
+}
+
+.section-4 .content-wrapper .actual-content .form {
+  position: relative;
+  top: 8rem;
+  padding: 3rem 4rem;
+  -webkit-box-shadow: 0 2px 15px var(--clr-grey-6);
+          box-shadow: 0 2px 15px var(--clr-grey-6);
+  border-radius: 1.5rem;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.section-4 .content-wrapper .actual-content .form .rate-cal-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-4 .content-wrapper .actual-content .form .rate-cal-con .rate-input {
+  outline: none;
+  border: none;
+  width: 60%;
+  color: var(--clr-grey-1);
+  border-bottom: 2px solid var(--clr-grey-6);
+  font-size: 1.2rem;
+}
+
+.section-4 .content-wrapper .actual-content .form .rate-cal-con select {
+  border: none;
+  width: 15%;
+  background-color: var(--clr-grey-9);
+  border-bottom: 2px solid var(--clr-grey-6);
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.section-4 .content-wrapper .actual-content .form .estimate-con {
+  padding-top: 3rem;
+  text-align: start;
+}
+
+.section-4 .content-wrapper .actual-content .form .estimate-con .revenue {
+  margin-bottom: 1rem;
+  color: #3671E9;
+}
+
+.section-4 .content-wrapper .actual-content .form .estimate-con .figure {
+  margin-bottom: 1rem;
+}
+
+.section-4 .content-wrapper .actual-content .form .estimate-con .figure h3 span {
+  color: #3671E9;
+}
+
+.section-4 .content-wrapper .actual-content .form .estimate-con .fig-desc {
+  color: var(--clr-grey-3);
+}
+
+.section-5 {
+  padding-top: 15rem;
+  text-align: center;
+}
+
+.section-5 .card-desc h3 {
+  color: var(--clr-black);
+}
+
+.section-5 .cards-container {
+  text-align: center;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3rem 0;
+}
+
+.section-5 .cards-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 70vh;
+  border-radius: 2rem;
+  background-color: var(--clr-white);
+}
+
+.section-5 .cards-container .card .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  padding: 1.5rem 2rem;
+}
+
+.section-5 .cards-container .card .card-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.section-5 .cards-container .card .coin .coin-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
+}
+
+.section-5 .cards-container .card .coin .coin-name .symbol {
+  color: var(--clr-grey-5);
+}
+
+.section-5 .cards-container .card p {
+  color: var(--clr-black);
+  margin: 2rem 0;
+}
+
+.section-5 .cards-container .card button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--clr-grey-4);
+}
+
+.section-alt-style {
+  padding-top: 15rem;
+  text-align: center;
+}
+
+.section-alt-style .card-desc h3 {
+  color: var(--clr-black);
+}
+
+.section-alt-style .cards-container {
+  text-align: center;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3rem 0;
+}
+
+.section-alt-style .cards-container .card-alt-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  height: 70vh;
+  border-radius: 2rem;
+  background-color: #07142c;
+}
+
+.section-alt-style .cards-container .card-alt-style .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  padding: 1.5rem 2rem;
+}
+
+.section-alt-style .cards-container .card-alt-style .card-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.section-alt-style .cards-container .card-alt-style .coin .coin-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
+  color: var(--clr-grey-8);
+}
+
+.section-alt-style .cards-container .card-alt-style .coin .coin-name .symbol {
+  color: var(--clr-grey-4);
+}
+
+.section-alt-style .cards-container .card-alt-style p {
+  color: var(--clr-white);
+  margin: 2rem 0;
+}
+
+.section-alt-style .cards-container .card-alt-style button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--clr-grey-1);
+}
+
+.card.active {
+  background-color: #07142c;
+  color: var(--clr-white);
+}
+
+.btn.active {
+  background-color: #07142c;
+  color: var(--clr-white);
+}
+
+aside {
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: var(--transition1);
+  transition: var(--transition1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+  height: 100%;
+  width: 100%;
+}
+
+aside .aside-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10rem;
+}
+
+aside .aside-center .aside-items-con-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--clr-white);
+}
+
+aside .aside-center .aside-items-con-1 a .item {
+  font-size: 1.2rem;
+}
+
+aside .aside-center .aside-items-con-1 a .item:hover {
+  color: #3671E9;
+}
+
+aside .aside-center .aside-items-con-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
+}
+
+aside .aside-center .aside-items-con-2 a .item {
+  padding: .5rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  border-right: 3px solid #3671E9;
+  margin: 0;
+}
+
+aside .aside-center .aside-items-con-2 a .item:hover {
+  color: #3671E9;
+}
+
+aside .aside-center .toggle-btn-2 {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+aside .aside-center .toggle-btn-2 i {
+  font-size: 2.5rem;
+  background-color: #07142c;
+  color: var(--clr-white);
+}
+
+.show-aside {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.big-section {
+  color: var(--clr-white);
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+  padding: 3rem 0 2rem;
+}
+
+.big-section .small-sec-1 {
+  padding: 5rem 3rem 3rem;
+}
+
+.big-section .small-sec-1 .header {
+  text-align: center;
+}
+
+.big-section .small-sec-1 .body-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 5rem 0;
+}
+
+.big-section .small-sec-1 .body-center .left p {
+  color: var(--clr-grey-5);
+}
+
+.big-section .small-sec-2 {
+  padding: 5rem 3rem 3rem;
+}
+
+.big-section .small-sec-2 .header {
+  text-align: center;
+}
+
+.big-section .small-sec-2 .body-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 5rem;
+}
+
+.big-section .small-sec-2 .body-center .left p {
+  color: var(--clr-grey-5);
+}
+
+.big-section .small-sec-2 .body-center .right {
+  padding-top: 5rem;
+}
+
+.big-section .small-sec-3 {
+  padding: 5rem 3rem 3rem;
+}
+
+.big-section .small-sec-3 .header {
+  text-align: center;
+}
+
+.big-section .small-sec-3 .body-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 5rem 0;
+}
+
+.big-section .small-sec-3 .body-center .left {
+  padding-top: 3rem;
+}
+
+.big-section .small-sec-3 .body-center .left p {
+  color: var(--clr-grey-5);
+}
+
+.big-section .small-sec-4 {
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 3rem 5rem;
+  background-image: url("/Oddball Projects/Crypto Currency Website/images/newsletter-box.png");
+  background-size: cover;
+  height: 17rem;
+}
+
+.big-section .small-sec-4 .body-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3.5rem;
+}
+
+.big-section .small-sec-4 .body-center .left-side p {
+  margin: 0;
+}
+
+.big-section .small-sec-4 .body-center .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  color: var(--clr-white);
+}
+
+.big-section .small-sec-4 .body-center .right-side input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--clr-white);
+  font-size: 1rem;
+  color: var(--clr-white);
+  background: transparent;
+  text-transform: lowercase;
+  font-family: var(--ff-primary);
+}
+
+.big-section .small-sec-4 .body-center .right-side input::-webkit-input-placeholder {
+  color: var(--clr-white);
+}
+
+.big-section .small-sec-4 .body-center .right-side input:-ms-input-placeholder {
+  color: var(--clr-white);
+}
+
+.big-section .small-sec-4 .body-center .right-side input::-ms-input-placeholder {
+  color: var(--clr-white);
+}
+
+.big-section .small-sec-4 .body-center .right-side input::placeholder {
+  color: var(--clr-white);
+}
+
+.big-section .small-sec-4 .body-center .right-side button {
+  background-color: var(--clr-white);
+  color: #3671E9;
+}
+
+footer {
+  background: url("/Oddball Projects/Crypto Currency Website/images/hero-bg.png");
+  padding: 1.5rem 2rem;
+}
+
+footer .footer-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2rem;
+}
+
+footer .footer-center .logo-con {
+  width: 8rem;
+  height: 5rem;
+}
+
+footer .footer-center .logo-con img {
+  width: inherit;
+  height: inherit;
+}
+
+footer .footer-center .list {
+  color: var(--clr-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+footer .footer-center .list h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-center .list a {
+  text-decoration: none;
+  margin-bottom: .4rem;
+  color: var(--clr-white);
+}
+
+footer .footer-center .list a:hover {
+  color: #3671E9;
+}
+
+footer .footer-center .list-3 {
+  color: var(--clr-white);
+}
+
+footer .footer-center .list-3 h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-center .list-3 .method-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-center .list-3 .method-con .method {
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+footer .footer-center .list-3 .method-con .method .img {
+  width: inherit;
+  height: inherit;
+}
+
+footer .footer-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--clr-white);
+  margin: 1.2rem;
+}
+
+footer .footer-foot .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-foot .icons i {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+  margin: 0 .6rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  header .menu-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu-center .items-container {
+    display: none;
+  }
+  header .menu-center .toggle-btn {
+    display: block;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5rem;
+  }
+  .section-1 {
+    height: 150vh;
+    padding: 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.2rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer-center {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+  footer .footer-foot {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-1 {
+    padding: 5rem 2rem !important;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .form {
+    padding: 1rem !important;
+  }
+  .small-sec-4 .body-center .right-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .form {
+    padding: .8rem 1.5rem !important;
+  }
+  .form .rate-cal-con .rate-input {
+    width: 100% !important;
+  }
+  .form .rate-cal-con select {
+    width: 100% !important;
+  }
+  .form .estimate-con {
+    padding-top: 1.5rem !important;
+  }
+  .form .estimate-con h5 {
+    font-size: 1.1rem;
+  }
+  .form .estimate-con h3 {
+    font-size: 1.8rem;
+  }
+  .rate-cal-con {
+    gap: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rate-cal-con .rate-input {
+    width: 18rem;
+  }
+  .rate-cal-con select {
+    width: 18rem;
+  }
+  .rate-cal-con .btn {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small-sec-1 .body-center {
+    padding: 3rem 1rem !important;
+  }
+  .small-sec-2 .body-center {
+    padding: 0 !important;
+  }
+  .small-sec-2 .body-center .right {
+    padding-top: 2.5rem !important;
+  }
+  .small-sec-3 {
+    padding: 0 !important;
+  }
+  .small-sec-4 {
+    margin: 3rem 1rem !important;
+    padding: 2rem !important;
+  }
+  .small-sec-4 .body-center {
+    padding: 0 !important;
+    gap: 1rem;
+  }
+  .small-sec-4 .right-side {
+    gap: 1rem !important;
+  }
+  .footer-foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-5 .card {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .section-1 {
+    padding: 0 !important;
+  }
+  .section-1 h2 {
+    font-size: 2.5rem !important;
+  }
+  .section-1 .percent-desc-con div {
+    font-size: 14px !important;
+  }
+  .section-4 {
+    padding: 3rem 0 !important;
+  }
+  .section-4 h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media screen and (max-width: 521px) {
+  .section-1 {
+    padding-top: 2rem !important;
+  }
+  .section-1 .general-container .right-container {
+    height: 350px !important;
+  }
+  .section-1 .general-container .left-container h2 {
+    font-size: 1.8rem !important;
+  }
+  .section-1 .general-container .left-container .percent-desc-con div {
+    font-size: .6rem !important;
+  }
+  .section-2 {
+    padding: 0 .5rem;
+  }
+  .section-3 {
+    padding: 0 .5rem;
+  }
+  .section-3 .left h2 {
+    font-size: 2.5rem;
+  }
+  .form h5 {
+    font-size: .8rem !important;
+  }
+  .form h3 {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .form {
+    display: relative;
+    top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .big-section section {
+    padding: 5rem 1rem !important;
+  }
+  .big-section .small-sec-3 .body-center {
+    padding: 0;
+  }
+  .big-section .small-sec-4 {
+    padding: 2rem !important;
+  }
+  .form h5 {
+    font-size: .5rem !important;
+  }
+  .form h3 {
+    font-size: 1rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
