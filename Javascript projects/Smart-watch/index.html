@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-watch display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./smart-watch images/amazon logo.png" alt="amazon logo">
+    </header>
+    <main>
+        <section class="section-center">
+            <article class="left">
+                <img src="./smart-watch images/black skin.webp" class="img active" id="black" alt="">
+                <img src="./smart-watch images/red skin (watch).png" class="img" id="red" alt="">
+                <img src="./smart-watch images/blue skin watch.png" class="img" id="blue" alt="">
+                <img src="./smart-watch images/purple skin.webp" class="img" id="purple" alt="">
+                <img src="./smart-watch images/pink skin.webp" class="img" id="pink" alt="">
+                <h3 class="watch watch-content active" id="time">00:00:00</h3>
+                <div id="heart-rate" class="watch-content heart-con">
+                    <img src="./smart-watch images/heart rate.png" class="heart-rate" alt="heart-img">
+                    <h3>78</h3>
+                </div>
+            </article>
+            <article class="right">
+                <div class="ads-desc">
+                    <h2>FitBit 19 - The Smartest Watch</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptate, voluptatibus itaque suscipit quae placeat hic dolorem illum possimus quas!</p>
+                </div>
+                <div class="clr-selector-btn">
+                    <h3>Select color</h3>
+                    <div class="btn-con">
+                        <button aria-label="read more"  type="button" class="btn black active" data-id="black"></button>
+                        <button aria-label="read more"  type="button" class="btn red" data-id="red"></button>
+                        <button aria-label="read more"  type="button" class="btn blue" data-id="blue"></button>
+                        <button aria-label="read more"  type="button" class="btn purple" data-id="purple"></button>
+                        <button aria-label="read more"  type="button" class="btn pink" data-id="pink"></button>
+                    </div>
+                </div>
+                <div class="features">
+                    <h3>Features</h3>
+                    <div class="btn-con">
+                        <button data-id="time" class="btn time">Time</button>
+                        <button data-id="heart-rate" class="btn time">heart rate</button>
+                    </div>
+                </div>
+                <button class="buy btn">buy now</button>
+            </article>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

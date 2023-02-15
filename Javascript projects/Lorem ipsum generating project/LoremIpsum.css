@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: #f1f5f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.section-center{
+    text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+.section-center h3{
+    font-size: 28px;
+}
+.lorem-form{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+}
+.lorem-form input{
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+#generate-btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #2468CF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222;
+    margin-left: 5px;
+    cursor: pointer;
+    color: white;
+}
+.lorem-text{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 16;
+    margin: auto 40px;
+}
+
+@media (max-width: 598px) {
+    .section-center h3{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-center h3{
+        font-size: 18px;
+    }
+}

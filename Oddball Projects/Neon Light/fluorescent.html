@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightsaber</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #saberlight-wrapper{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #lightsaber-wrapper{
+            margin-top: 200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #lightsaber{
+            width: auto;
+            height: 20px;
+            border-radius: 10px;
+            margin: 5%;
+            background-color: white;
+            box-shadow: 0 0 5px #03e9f4, 
+                        0 0 25px #03e9f4, 
+                        0 0 50px #03e9f4, 
+                        0 0 75px #03e9f4, 
+                        0 0 100px #03e9f4;
+                        animation: pulse 2s ease-in-out infinite;
+        }
+        #yellow-lightsaber{
+            width: auto;
+            height: 20px;
+            border-radius: 10px;
+            margin: 5%;
+            background-color: white;
+            box-shadow: 0 0 5px #d0f403, 
+                        0 0 25px #d0f403, 
+                        0 0 50px #d0f403, 
+                        0 0 75px #d0f403, 
+                        0 0 100px #d0f403;
+                        animation: pulse 2s ease-in-out infinite;
+        }
+        #orange-lightsaber{
+            width: auto;
+            height: 20px;
+            border-radius: 10px;
+            margin: 5%;
+            background-color: white;
+            box-shadow: 0 0 5px #f45b03, 
+                        0 0 25px #f45b03, 
+                        0 0 50px #f45b03, 
+                        0 0 75px #f45b03, 
+                        0 0 100px #f45b03;
+                        animation: pulse 2s ease-in-out infinite;
+        }
+        #green-lightsaber{
+            width: auto;
+            height: 20px;
+            border-radius: 10px;
+            margin: 5%;
+            background-color: white;
+            box-shadow: 0 0 5px #03f403, 
+                        0 0 25px #03f403, 
+                        0 0 50px #03f403, 
+                        0 0 75px #03f403, 
+                        0 0 100px #03f403;
+                        animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse{
+            0%{
+                width: 450px;
+                height: 20px;
+            }
+            50%{
+                width: 100px;
+                height: 10px;
+            }
+            100%{
+                width: 450px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lightsaber</h1>
+    <div id="saberlight-wrapper">
+        <div id="lightsaber"></div>
+        <div id="yellow-lightsaber"></div>
+        <div id="orange-lightsaber"></div>
+        <div id="green-lightsaber"></div>
+    </div>
+    <div id="lightsaber-wrapper">
+        <div id="green-lightsaber"></div>
+        <div id="orange-lightsaber"></div>
+        <div id="yellow-lightsaber"></div>
+        <div id="lightsaber"></div>
+    </div>
+    
+</body>
+</html>

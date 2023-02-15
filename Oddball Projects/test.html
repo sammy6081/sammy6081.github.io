@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aside</title>
+    <style>
+            .container {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        gap: 1rem;
+      }
+      aside {
+        min-height: 100vh;
+        justify-content: space-between;
+        flex-direction: column;
+        border-right: 1px solid red;
+      }
+      
+      aside ul {
+        padding-top: 30%;
+        list-style-type: none;
+        text-align: center;
+      }
+      aside a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 23px;
+        color: green;
+        margin: 40px;
+        font-family: sans-serif;
+        font-weight: lighter;
+      }
+      
+      aside a:hover {
+        color: blue;
+      }
+      
+    </style>
+</head>
+<body>
+      <div class="container">
+        <aside>
+          <ul>
+            <li><a href="#PersonalInformation">Personal Information</a></li>
+            <li class="second"><a href="#SecurityandLogin">Security and Login</a></li>
+            <li><a href="Logout">Logout</a></li>
+          </ul>
+      
+        </aside>
+        <main>
+          <h4>To keep you safe and secure</h4>
+        </main>
+      </div>
+</body>
+</html>

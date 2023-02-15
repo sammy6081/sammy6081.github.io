@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us 4 trip</title>
+    <style>
+        .a-class:hover{
+            border: 2x solid blue;
+            background-color: white;
+            color: blue;
+            border-radius: 8px;
+            padding: 8px;
+            text-align: center;
+        }
+        .a-class{
+            text-decoration: none;
+            padding-top: 42;
+            
+        }
+        #menu-bar{
+            background-color: none; 
+            text-align: center;
+            height: 24px;
+            margin: 0;
+            border: 0;
+            position: -webkit-sticky;
+            position: -o-sticky;
+            position: sticky;
+        }
+        #menu-bar:last-of-type{
+            padding: 16px 24px;
+        }
+        #trips{
+            padding-right: 16px;
+        }
+        #about{
+            padding-right: 16px;
+        }
+        #body-wrapper{
+            margin: 0;
+            background-color: #f2f6ff;
+            padding-left: 32px;
+            padding-right: 32px;
+            text-align: center;
+        }
+        form{
+            Border: 1px solid #ccc;
+            background-color: white;
+            width: 500px;
+            height: 600px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        #submit{
+            Background-Color: #0056ff;
+            Padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+        }
+        .form-input{
+            Font-Size: 18px;
+            Padding-Bottom: 12px;
+            Margin-Bottom: 28px;
+            Border-Top: 0;
+            Border-Left: 0;
+            Border-Right: 0;
+            Border-Bottom: 1px solid #ccc;
+        }
+        textarea{
+            width: 200px;
+            height: 150px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body id="body-wrapper">
+    <div id="menu-bar">
+        <a href="/place of interset images/index.html" class="a-class" id="trips">Trips</a>
+        <a href="/place of interset images/abouttrip.html" class="a-class" id="about">About</a>
+        <a href="/place of interset images/contactus4trip.html" class="a-class">Contact Us</a>
+    </div>
+     <form action="">
+         <h1>Contact Us</h1>
+         <div>
+             <label for="username">Username</label>
+             <input type="text" name="username" placeholder="Username" id="username" class="form-input">
+         </div><br>
+         <div>
+             <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder="address@email.com" class="form-input">
+         </div><br>
+         <div>
+             <p>Description</p>
+             <textarea name="Description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+         </div><br>
+         <div>
+             <input type="submit" value="Submit" name="submit"  id="submit">
+         </div>
+     </form>
+</body>
+</html>

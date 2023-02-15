@@ -1,0 +1,143 @@
+body{
+    background-color: #f1f5f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.img-article img{
+    width: 100%;
+    height: 300px;
+}
+.img-article {
+    border: 3px solid #222;
+    border-radius: 10px;
+}
+.article{
+    width: 35%;
+    height: 300px;
+    margin: auto 20px;
+    /* box-sizing: border-box; */
+}
+.descr-article header h1{
+    font-size: 36px;
+    color: #3967A9;
+    margin: auto;
+}
+.descr-article header p{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #222;
+    margin: auto;
+    text-transform: capitalize;
+}
+.descr-article > p{
+    font-size: 16px;
+    color: gray;
+    text-align: left;
+    text-transform: capitalize;
+}
+.timer-container{
+    display: flex;
+    text-transform: capitalize;
+    /* justify-content: space-between; */
+}
+.timer-container > div{
+    width: 70px;
+    height: 70px;
+    background-color: #222;
+    color: white;
+    margin-right: 20px;
+    padding-top: 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.timer-container > div >h3{
+    margin: auto;
+    font-size: 22px;
+}
+.timer-container > div > p{
+    margin: 8px auto;
+    font-weight: 400;
+}
+
+
+
+
+
+@media (max-width: 760px) {
+    .container{
+        padding-left: 20%;
+        display: block;
+        margin-top: 15px;
+    }
+    .article{
+        width: 75%;
+    }
+    .img-article img{
+        width: 100%;
+        height: 200px;
+    }
+    .img-article {
+        height: 200px;
+    }
+    .descr-article{
+        margin-top: 20px;
+    }
+    .descr-article header h1{
+        font-size: 26px;
+    }
+    .timer-container > div{
+        width: 60px;
+        height: 60px;
+        background-color: #222;
+        color: white;
+        margin-right: 10px;
+        padding-top: auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .timer-container > div p{
+        margin: auto;
+    }
+}
+
+@media ( max-width: 538px) {
+    .container{
+        padding-left: 20%;
+        display: block;
+        margin-top: 15px;
+    }
+    .article{
+        width: 75%;
+    }
+    .descr-article{
+        margin-top: 20px;
+    }
+    .descr-article header h1{
+        font-size: 18px;
+    }
+    .descr-article header p{
+        font-size: 14px;
+    }
+    .timer-container > div{
+        width: 60px;
+        height: 60px;
+        background-color: #222;
+        color: white;
+        margin-right: 10px;
+        padding-top: auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .timer-container > div > p{
+        margin: auto;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}

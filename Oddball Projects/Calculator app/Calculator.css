@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#app-wrapper{
+    width: 100%;
+    height: 600px;
+}
+#Calculator{
+    background-color: rgb(71, 67, 67);
+    width: 300px;
+    height: 350px;
+    margin-left: 41%;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: oblique;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.num-wrappers{
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#equality{
+    margin-left: 100px;
+    padding-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: -webkit-linear-gradient(top, white, gray);
+    color: rgb(71, 67, 67);
+    border-radius: 4px;
+    cursor: pointer;
+}
+div > #input{
+    overflow-x: auto;
+    overflow-y: none;
+    text-align: start;
+    color: black;
+    background-color: white;
+    border: 2px solid gray;
+    border-top: 10px solid rgb(71, 67, 67);
+    border-radius: 4px;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 12px 12px 12px;
+}
+div > div > div > div{
+    cursor: pointer;
+}
