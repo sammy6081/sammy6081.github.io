@@ -11,7 +11,7 @@
         }
         /* navigation-bar & menu-items section */
         nav{
-            height: 77px;
+            height: 65px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -20,7 +20,7 @@
         #logo{
             width: 40px;
             height: 40px;
-            margin-top: 16px;
+            margin-top: 12px;
             margin-left: 16px;
         }
         nav ul{
@@ -37,6 +37,7 @@
             position: relative;
             list-style: none;
             display: inline-block;
+            background: #2c3e50;
             Font-Family: 'Poppins', sans-serif;  
             Background-Color: white; 
         }
@@ -84,7 +85,6 @@
         /* main */
         main{
             margin: 0;
-            box-sizing: border-box;
         }
         main section{
             margin: 0;
@@ -130,10 +130,10 @@
         .steps-wrapper{
             width: 25%;
             margin: 0;
-            height: 420px;
+            height: 500px;
             display: block;
             text-align: center;
-            padding: 112px 48px;
+            padding: 70px 32px 0 32px;
             color: white;
         }
         main #section2 #step1-wrapper:hover i{
@@ -180,9 +180,9 @@
             Background-color: #f7eee2; 
             width: 100%;
             margin: 0;
+            height: 650px;
             text-align: center;
-            padding: 75px 0;
-            display: block;
+            padding-top: 70px;
         }
         .fresh-food{
             text-align: center;
@@ -209,23 +209,23 @@
         #section3-item{
             display: flex;
             width: 100%;
-            margin: 0 auto;
-            justify-content: space-between;
+            margin: 0;
+            height: 400px;
         }
         .section3-items{
-            /* padding: 79px; */
-            width: 20%;
-            margin: 40px;
+            padding: 79px;
+            width: 25%;
+            margin: 0;
         }
         .icon-wrapper{
             Background-Color: #e3b375;
+            font-size: 60px; 
             box-sizing: border-box;
             border-radius: 80px;
-            max-width: 150px;
-            max-height: 150px;
+            width: 150px;
+            height: 150px;
             padding: 24px;
-            /* text-align: center; */
-            margin: auto;
+            text-align: center;
         }
         .icon-headings{
             Font-Family: 'Poppins', sans-serif; 
@@ -238,7 +238,6 @@
             Letter-Spacing: 0.5px; 
             font-weight: 500; 
             Color: #8b8b99;
-            width: auto;
         }
         main #section3 .icon-wrapper{
             color: white;
@@ -257,8 +256,9 @@
         }
         /* section4 */
         #section4{
-            margin: auto auto 40px auto;
+            margin: 0;
             width: 100%;
+            height: 700px;
             text-align: center;
         }
         #section4-heading{
@@ -297,17 +297,15 @@
         }
         #card1{
             height: 330px;
-            margin-left: auto;
+            margin-left: 100px;
         }
         #card2{
             height: 310px;
             align-self: center;
-            margin-left: 30px;
-            margin-right: 30px;
         }
         #card3{
             height: 340px;
-            margin-right: auto;
+            margin-right: 100px;
         }
         .testimonials{
             Font-Family: 'Poppins', sans-serif; 
@@ -329,13 +327,13 @@
         }
         /* section5 */
         #section5{
-            /* height: 500px; */
+            height: 500px;
             width: 100%;
             display: flex;
-            margin-bottom: 0;
         }
         #article1{
             width: 70%;
+            height: 500px;
         }
         #article2{
             margin: 0;
@@ -345,7 +343,7 @@
         }
         #strawberry-image{
             width: 100%;
-            max-height: 600px;
+            height: 600px;
         }
         #follow-us-form{
             text-align: center;
@@ -401,12 +399,13 @@
         }
         /* section6 */
         #section6{
+            margin-top: 100px;
             width: 100%;
+            height: 250px;
             text-align: center;
             display: flex;
             justify-content: space-between;
             background-Color: #f6fcfa;
-            box-sizing: content-box;
         }
         .numbers{
             width: 20%;
@@ -417,7 +416,6 @@
             font-Size: 45px; 
             font-weight: 600;
             margin-bottom: 12px;
-            margin-top: 80px;
         }
         #numbers-description{
             Font-Family: 'Poppins', sans-serif; 
@@ -426,19 +424,11 @@
             font-weight: 600;
             font-style: italic;
             color: #57e3b5;
-            margin-bottom: 130px;
         }
         /* section7 */
         #section7{
             width: 100%;
             text-align: center;
-            box-sizing: content-box;
-        }
-        #section7 > iframe{
-            width: 100%;
-            text-align: center;
-            height: 400px;
-            margin: 80px auto;
         }
         #video-heading{
             Font-Family:'poppins', sans-serif; 
@@ -449,12 +439,11 @@
         /* section8 */
         #section8{
             width: 100%;
-            /* height: 700px; */
+            height: 700px;
             display: flex;
             justify-content: space-evenly;
-            margin: 40px auto;
+            margin: 0;
             text-align: start;
-            box-sizing: content-box;
         }
         #branches-wrapper{
             width: 40%;
@@ -466,8 +455,8 @@
         }
         #contact-us{
             color: #91ac41;
-            Font-Family: 'Caveat', Cursive;
-            font-size: 24px;
+            font-family: cursive;
+            font-size: 20px;
             font-style: italic;
             margin-bottom: 10px;
         }
@@ -555,157 +544,6 @@
             padding-top: 50px;
             background-color: black;
         }
-        /* mobile responsive style */
-        @media  (max-width: 900px) {
-            body{
-            margin: 0;
-            padding: 0;
-        }
-        main{
-            width: 100%;
-            margin: 0;
-            padding: 20px;
-        }
-        nav{
-            height: 77px;
-            box-sizing: border-box;
-            align-self: center;
-        }
-        nav ul li:not(#btn-wrapper){
-            display: none;
-        }
-        #section1 > h1{
-            font-size: 28px;
-        }
-        #section1 > p{
-            padding: 16px;
-            box-sizing: border-box;
-        }
-        #section2{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            }
-            .steps-wrapper{
-            width: 100%;
-            margin: 0;
-            height: 500px;
-            display: block;
-            text-align: center;
-            padding: 70px 32px 0 32px;
-            color: white;
-            box-sizing: border-box;
-        }
-        #section3{
-            box-sizing: border-box;
-            display: block;
-            padding: 16px;
-        }
-        #section3-item{
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-        }
-        .section3-items{
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .icon-wrapper{
-            margin: auto;
-        }
-        #section4{
-            box-sizing: border-box;
-            display: block;
-            padding: 16px;
-        }
-        #section4-item{
-            flex-direction: column;
-            width: 100%;
-        }
-        .testimonial-wrapper{
-            width: 100%;
-            text-align: center;
-            box-sizing: border-box;
-            margin: 20px 0;
-            height: 350px;
-        }
-        #card1{
-            margin-left: 0;
-        }
-        #section5{
-            flex-direction: column;
-            width: 100%;
-        }
-        #article1{
-            width: 100%;
-            margin: 0;
-        }
-        #article2{
-            margin: 0;
-            height: 300px;
-            width: 100%;
-        }
-        #strawberry-image{
-            width: 100%;
-        }
-        #follow-us-form{
-            text-align: center;
-            margin: 32px;
-            padding: 0;
-            height: 50%;
-            width: 80%;
-            justify-content: start;
-        }
-        #follow-us{
-            Font-Family: 'Poppins', sans-serif; 
-            font-Size: 30px; 
-            font-weight: 600;
-            text-align: left;
-        }
-        #follow-us-description{
-            width: 100%;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        #follow-us-btn{
-            width: 35%;
-        }
-        #section6{
-            flex-direction: column;
-            padding: 60px auto;
-            box-sizing: border-box;
-        }
-        .numbers{
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        .numbers-heading{
-            margin-top: 32px;
-            margin-bottom: 0;
-        }
-        #numbers-description{
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-        #section8{
-            display: block;
-        }
-        #section8{
-            box-sizing: border-box;
-        }
-        #branches-wrapper{
-            width: 100%;
-            padding: 32px auto;
-        }
-        #section8-form-wrapper{
-            width: 100%;
-            padding: 32px auto;
-        }
-        }
     </style>
     <script src="https://kit.fontawesome.com/2949b36d12.js" crossorigin="anonymous"></script>
 </head>
@@ -724,18 +562,18 @@
                 <li><a href="">Watch</a></li>
                 <li>
                     <a href="" id="block-wrapper">Blocks <i class="fa-solid fa-caret-down"></i></a></li>
-                <li id="btn-wrapper"><a href="">
+                <li><a href="">
                     <button id="btn">BUY NOW</button>
                 </a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="section1">
-            
-                <h1 id="section1-heading">Vegan Store Simple Website Template</h1>
-                <p id="section1-description">With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
-            
+        <section >
+                <div id="section1">
+                    <h1 id="section1-heading">Vegan Store Simple Website Template</h1>
+                    <p id="section1-description">With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.</p>
+                </div>
         </section>
         <section id="section2">
             <div class="steps-wrapper" id="step1-wrapper">
@@ -762,12 +600,18 @@
             </div>
         </section>
         <section id="section3">
+            <div id="section3heading-wrapper">
                 <p class="fresh-food">Fresh Food</p>
                 <h1 id="section3-heading">Our Vegan Store!</h1>
-                <p class="heading-description"> Radish contains a lot of fiber, pectin and mineral salts.</p>
+                <div class="setion3-items">
+                    <p class="heading-description">
+                        Radish contains a lot of fiber, pectin and mineral salts.
+                    </p>
+                </div>
+            </div>
             <div id="section3-item">
                 <div id="store1" class="section3-items">
-                    <div class="icon-wrapper">
+                    <div class="icon-wrapper" class="setion3-items">
                         <i class="fa fa-camera"></i>
                     </div>
                     <h2 class="icon-headings">Fresh Vegetables</h2>
@@ -808,7 +652,11 @@
             <div id="section4heading-wrapper">
                 <p class="fresh-food">Fresh Food</p>
                 <h1 id="section4-heading">Our Vegan Shop!</h1>
-                <p id="heading4-description" class="heading-description">According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating</p>
+                <div>
+                    <p id="heading4-description" class="heading-description">
+                        According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating
+                    </p>
+                </div>
             </div>
             <div id="section4-item">
                 <div id="card1" class="testimonial-wrapper">
@@ -852,7 +700,7 @@
                     <h1 id="follow-us" class="form-items">Follow Us</h1>
                     <p id="follow-us-description" class="form-items">A wide range of products; many unusual and tasty products; courteous staff.</p>
                     <input type="email" name="email" id="follow-us-email" placeholder="Your Email" class="form-items">
-                    <button type="submit" id="follow-us-btn" class="form-items">Subscribe</button>
+                    <button id="follow-us-btn" class="form-items">Subscribe</button>
                 </form>
             </div>
         </section>
@@ -884,7 +732,7 @@
         </section>
         <section id="section7">
             <h1 id="video-heading">Vimeo Video</h1>
-            <iframe aria-label="video" src="https://player.vimeo.com/video/275412279 " allowfullscreen="" frameborder="0"></iframe>
+            <iframe src="https://player.vimeo.com/video/275412279 " width="700px" height="550px" frameborder="0"></iframe>
         </section>
         <section id="section8">
             <div id="branches-wrapper">
@@ -926,7 +774,7 @@
                         </div>
                         <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
                         <div>
-                        <button type="submit" id="form8-btn">Submit Now</button>
+                        <button id="form8-btn">Submit Now</button>
                         </div>
                     </div>
                 </form>
