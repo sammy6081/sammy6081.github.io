@@ -564,6 +564,7 @@
         main{
             width: 100%;
             margin: 0;
+            padding: 20px;
         }
         nav{
             height: 77px;
@@ -673,7 +674,7 @@
         }
         #section6{
             flex-direction: column;
-            padding: 60px;
+            padding: 60px auto;
             box-sizing: border-box;
         }
         .numbers{
@@ -698,11 +699,11 @@
         }
         #branches-wrapper{
             width: 100%;
-            padding: 32px 28px;
+            padding: 32px auto;
         }
         #section8-form-wrapper{
             width: 100%;
-            padding: 32px 28px;
+            padding: 32px auto;
         }
         }
     </style>
@@ -851,7 +852,7 @@
                     <h1 id="follow-us" class="form-items">Follow Us</h1>
                     <p id="follow-us-description" class="form-items">A wide range of products; many unusual and tasty products; courteous staff.</p>
                     <input type="email" name="email" id="follow-us-email" placeholder="Your Email" class="form-items">
-                    <button id="follow-us-btn" class="form-items">Subscribe</button>
+                    <button type="submit" id="follow-us-btn" class="form-items">Subscribe</button>
                 </form>
             </div>
         </section>
@@ -883,7 +884,7 @@
         </section>
         <section id="section7">
             <h1 id="video-heading">Vimeo Video</h1>
-            <iframe src="https://player.vimeo.com/video/275412279 " allowfullscreen="" frameborder="0"></iframe>
+            <iframe aria-label="video" src="https://player.vimeo.com/video/275412279 " allowfullscreen="" frameborder="0"></iframe>
         </section>
         <section id="section8">
             <div id="branches-wrapper">
@@ -925,7 +926,7 @@
                         </div>
                         <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
                         <div>
-                        <button id="form8-btn">Submit Now</button>
+                        <button type="submit" id="form8-btn">Submit Now</button>
                         </div>
                     </div>
                 </form>

@@ -14,9 +14,14 @@ closeBtn.addEventListener('click', function(){
     asideSection.classList.toggle('show-aside');
 });
 
-for (let i = 0; i < cards.length; i++){
-    cards[i].addEventListener('click', () => {
-        cards.classList.toggle('card-alt-style')
+cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      // Remove "clicked" class from all cards
+      cards.forEach((c) => {
+        c.classList.remove("card-alt-style");
+      });
+      // Add "clicked" class to clicked card
+      card.classList.add("card-alt-style");
     });
-}
+  });
 
